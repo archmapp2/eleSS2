@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <meta
+			http-equiv="Content-Security-Policy"
+			content="script-src 'self' 'unsafe-inline'"
+		/> -->
+		<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'" /> -->
+		<title>favorate Web Page</title>
+
+		<link rel="stylesheet" href="../css/bulma.css" />
+		<link rel="stylesheet" href="../css/bulma-extensions.min.css" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css"
+		/> -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css"
+		/> -->
+
+		<link rel="stylesheet" href="main.css" />
+
+		<script type="text/javascript" src="../js/bulma-quickview.min.js"></script>
+
+		<!-- <script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+		></script> -->
+
+		<script src="../js/shortBulma$$.js"></script>
+	</head>
+
+	<body>
+		<nav class="p-2">
+			<div class="is-flex container">
+				<button class="button modalBtn_f is-primary mr-4">追加</button>
+				<input
+					type="text"
+					id="search"
+					class="input"
+					name="search"
+					placeholder="フィルタ"
+				/>
+				<span id="tagN" class="tag is-info is-large ml-2">/</span>
+			</div>
+		</nav>
+
+		<main>
+			<p id="no-items">現在、追加されたURLはありません。</p>
+			<div id="items" class="mt-3"></div>
+
+			<section class="section">
+				<!-- <div class="container">
+					<h2 class="subtitle has-text-weight-bold">Modal card</h2>
+					<button class="button is-primary modalBtn_f" id="modalBtnId">
+						Open modal card
+					</button>
+				</div> -->
+
+				<div id="modalTrgt" class="modal is-link">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head has-background-success">
+							<h2 class="modal-card-title">大好きなWebページの追加</h2>
+							<button
+								class="delete modalBtn has-background-warning-dark"
+								aria-label="Close"
+							></button>
+						</header>
+
+						<section class="modal-card-body has-background-success-light">
+							<div id="modalDIV0" class="is-flex has-background-white-ter">
+								<input
+									type="text"
+									id="url"
+									name="url"
+									placeholder="Enter URL"
+									class="input my-3"
+								/>
+							</div>
+						</section>
+
+						<footer class="modal-card-foot">
+							<button class="button is-success modalBtnOK px-6 ml-6">OK</button>
+							<span style="margin: auto"></span>
+							<button class="button modalBtn has-background-warning mr-6">
+								閉じる
+							</button>
+						</footer>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			// require('./app')
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>

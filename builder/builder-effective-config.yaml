@@ -1,0 +1,10 @@
+directories:
+  output: builder
+  buildResources: build
+appId: com.electron.yourapp
+win:
+  target: zip
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 9.4.4

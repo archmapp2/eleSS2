@@ -1,0 +1,85 @@
+
+@mixin atMedium {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+.fs {
+  font-size: 0.9rem;
+  @include atMedium {
+    font-size: 1rem;
+  }
+}
+
+.lh7 {
+  line-height: 1.7rem;
+  @include atMedium {
+    line-height: 1.8rem;
+  }
+}
+
+.top_nav {
+  position: fixed;
+  width: 100%;
+}
+
+// global
+#nav {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.z-i {
+  z-index: 10000;
+}
+.km {
+  border-radius: 7px;
+}
+
+li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+dt {
+  background-color: #dddddd;
+  //  background-color: #FEFEFE;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 3px;
+  padding-bottom: 5px;
+  padding-left: 0.7rem;
+}
+
+dd {
+  margin-bottom: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  // padding-left: 2rem;
+}
+
+.chestnut-light {
+  color: #947600;
+  // color: rgb(118,047,007);
+}
+
+.lightcoral {
+  color: #f08080;
+}
+
+.gold {
+  color: gold;
+}
+
+.goldenrod {
+  color: goldenrod;
+}
+
+pre#pre1 {
+  height: 800px;
+  overflow-y: scroll;
+}

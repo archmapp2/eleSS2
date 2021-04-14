@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="script-src 'self' 'unsafe-inline'"
+		/>
+		<title>favorate Web Page</title>
+
+		<link rel="stylesheet" href="../css/bulma.css" />
+		<link rel="stylesheet" href="../css/bulma-extensions.min.css" />
+
+		<link rel="stylesheet" href="main.css" />
+
+		<script type="text/javascript" src="../js/bulma-quickview.min.js"></script>
+
+		<!-- <script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+		></script> -->
+
+		<script src="../js/shortBulma$$.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<button id="show-modal">+</button>
+			<input type="text" id="search" placeholder="Search" />
+		</header>
+
+		<main>
+			<p id="no-items">No Items</p>
+			<div id="items"></div>
+			<div id="modalDIV">
+				<input type="text" id="url" placeholder="Enter URL" />
+				<button id="add-item">Add Item</button>
+				<button id="close-modal">Cancel</button>
+			</div>
+
+			<!-- <section class="section">
+				<div class="container">
+					<h2 class="subtitle has-text-weight-bold">Modal card</h2>
+					<button class="button is-primary modalBtn" id="modalBtn">
+						Open modal card
+					</button>
+				</div>
+
+				<div id="modalTrgt" class="modal is-link">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head has-background-success">
+							<h2 class="modal-card-title">Modal card title</h2>
+							<button
+								class="delete modalBtn has-background-warning-dark"
+								aria-label="Close"
+							></button>
+						</header>
+						<section class="modal-card-body has-background-success-light">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed
+								pulvinar nulla. In congue ultricies nunc, a porttitor odio
+								finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris
+								tincidunt ut. Donec finibus orci dolor, vel viverra tortor
+								sagittis ut. Curabitur lectus enim, maximus et condimentum eget,
+								condimentum vitae erat. Cras rutrum nisi ligula, et tristique
+								augue aliquet eget. Fusce ut congue justo. Vestibulum tempor
+								nisi a aliquet suscipit.
+							</p>
+						</section>
+						<footer class="modal-card-foot">
+							<button class="button is-success modalBtnOK px-6">OK</button>
+							<span style="margin: auto"></span>
+							<button class="button modalBtn has-background-warning">
+								キャンセル
+							</button>
+						</footer>
+					</div>
+				</div>
+			</section> -->
+		</main>
+
+		<script type="text/javascript">
+			$$de(() => {
+				// $$codeS('#pre1')
+				$$qAe_ocL('.modalBtn', '#modalTrgt')
+				$$qe('.modalBtnOK', (e) => {
+					$$qcL('#modalTrgt')
+				})
+				// Quickview extension
+				bulmaQuickview.attach()
+			})
+		</script>
+
+		<script>
+			// You can also require other files to run in this process
+			require('./app')
+		</script>
+	</body>
+</html>

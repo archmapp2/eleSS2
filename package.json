@@ -1,0 +1,45 @@
+{
+  "name": "favorate-web",
+  "version": "1.0.0",
+  "description": "Master Electron Course Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "ins": "electron --inspect=5858 .",
+    "brk": "electron --inspect-brk=5858 .",
+    "watch": "nodemon --exec electron .",
+    "builder": "electron-builder --win --x64",
+    "package-win": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shopping List\"",
+    "eb": "electron-builder -w zip",
+    "reset": "git reset --hard"
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "bulma",
+    "archmapp"
+  ],
+  "author": "archmapp",
+  "license": "CC0-1.0",
+  "build": {
+    "appId": "com.electron.yourapp",
+    "directories": {
+      "output": "builder"
+    },
+    "win": {
+      "target": "zip"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  }
+}
